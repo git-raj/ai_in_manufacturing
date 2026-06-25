@@ -14,7 +14,6 @@ export default function Navigation() {
     { label: "Portfolio & Value", href: "/portfolio" },
     { label: "Governance", href: "/governance" },
     { label: "Toolkit", href: "/toolkit" },
-    { label: "About", href: "/about" },
   ];
 
   return (
