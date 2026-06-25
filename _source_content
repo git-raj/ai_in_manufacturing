@@ -1,0 +1,1422 @@
+# High-Tech Manufacturing AI Innovation Leader
+## Enterprise Success Playbook for AI Ideation, Innovation, and Value Realization
+
+**Audience:** AI innovation managers, enterprise AI strategy leaders, digital transformation managers, product managers, architects, and business transformation leaders in high-tech manufacturing.  
+**Applies to:** Advanced materials, photonics, electronics, semiconductors, industrial equipment, life sciences, medical technology, aerospace/defense suppliers, automotive technology, energy equipment, and other complex engineered-product manufacturers.  
+**Research base:** Updated June 24, 2026.  
+**Purpose:** A practical operating manual for turning material business problems into safe, adoptable, measurable AI-enabled improvements.
+
+> This playbook is deliberately company-neutral. It assumes a complex manufacturer with a mix of R&D, product lifecycle management (PLM), factories, operational technology (OT), supply chain, commercial engineering, quality, finance, and corporate services.
+
+---
+
+## Table of contents
+
+1. [Executive summary: the role that actually wins](#1-executive-summary-the-role-that-actually-wins)
+2. [The high-tech manufacturing context](#2-the-high-tech-manufacturing-context)
+3. [The AI Innovation Operating System](#3-the-ai-innovation-operating-system)
+4. [Success framework: the eight capabilities of a top performer](#4-success-framework-the-eight-capabilities-of-a-top-performer)
+5. [Enterprise opportunity architecture](#5-enterprise-opportunity-architecture)
+6. [Discovery and workshop system](#6-discovery-and-workshop-system)
+7. [Opportunity framing: the one-page canvas](#7-opportunity-framing-the-one-page-canvas)
+8. [Technology-fit and solution decision framework](#8-technology-fit-and-solution-decision-framework)
+9. [Manufacturing AI use-case portfolio](#9-manufacturing-ai-use-case-portfolio)
+10. [Prioritization, funding, and portfolio management](#10-prioritization-funding-and-portfolio-management)
+11. [Business case and value-realization framework](#11-business-case-and-value-realization-framework)
+12. [Governance, safety, OT security, and responsible AI](#12-governance-safety-ot-security-and-responsible-ai)
+13. [Pilot-to-scale delivery framework](#13-pilot-to-scale-delivery-framework)
+14. [Data, digital thread, and platform-enablement strategy](#14-data-digital-thread-and-platform-enablement-strategy)
+15. [Stakeholder influence and executive communication](#15-stakeholder-influence-and-executive-communication)
+16. [Operating cadence, metrics, and dashboards](#16-operating-cadence-metrics-and-dashboards)
+17. [30/60/90-day and first-year success plan](#17-306090-day-and-first-year-success-plan)
+18. [Reusable templates and checklists](#18-reusable-templates-and-checklists)
+19. [Common failure modes and recovery actions](#19-common-failure-modes-and-recovery-actions)
+20. [Research AI prompts](#20-research-ai-prompts)
+21. [Source framework](#21-source-framework)
+
+---
+
+# 1. Executive summary: the role that actually wins
+
+## The real job
+
+This role is **not primarily an AI engineering job**. It is the front end of an enterprise value system:
+
+> **Translate strategic and operational pain into a disciplined portfolio of AI-enabled initiatives that can be safely delivered, adopted, measured, and scaled.**
+
+The top performer works at the intersection of business strategy, manufacturing operations, product engineering, data/AI, delivery, finance, risk, and change management. They do not begin with “Where can we use agents?” They begin with “Which strategic outcome is constrained, what decision or workflow causes the constraint, and what is the least-complex intervention that changes it?”
+
+```mermaid
+flowchart LR
+    A[Strategic priority or operational pain] --> B[Structured discovery]
+    B --> C[Problem, workflow and value framing]
+    C --> D[Technology options + data/risk assessment]
+    D --> E[Portfolio selection]
+    E --> F[Time-boxed pilot]
+    F --> G{Evidence threshold met?}
+    G -->|Yes| H[Scale into operating workflow]
+    G -->|No| I[Revise, park, or stop]
+    H --> J[Measure realized value and reuse learning]
+```
+
+## The north-star outcome
+
+> Build a repeatable organizational capability that converts high-value business problems into trustworthy AI-enabled improvements—quickly enough to matter, safely enough to scale, and rigorously enough to prove value.
+
+## What excellent performance looks like
+
+| Outcome | What “good” looks like | Evidence created |
+|---|---|---|
+| **Trusted demand** | Business leaders bring meaningful problems before preselecting tools or vendors. | Sponsor map, recurring workshops, qualified pipeline. |
+| **High-quality framing** | A delivery team can understand the problem, user, data, dependencies, controls, and success measures without rediscovering everything. | Opportunity canvas, process map, hypothesis, architecture options. |
+| **Smart selection** | Capacity is invested in the few ideas with material value, credible readiness, and accountable sponsorship. | Scorecards, stage-gate decisions, portfolio dashboard. |
+| **Operational adoption** | Pilots are embedded in a real workflow with a named process owner and training/change plan. | Adoption hypothesis, operating model, support plan. |
+| **Measured value** | Leaders can point to quality, throughput, cost, service, working capital, revenue, safety, or risk improvements. | Baseline, measurement plan, realized-value report. |
+| **Reusable capability** | Every initiative improves shared patterns, data, governance, and ways of working. | Pattern library, reusable components, lessons learned. |
+
+## The role’s “one sentence” positioning
+
+> I lead the disciplined discovery, prioritization, and value realization of AI opportunities across the manufacturing value chain—connecting strategy, operations, engineering, data, technology, and governance.
+
+## What this role is not
+
+- A demo curator or “innovation theater” leader.
+- A passive intake coordinator.
+- The sole owner of every AI implementation.
+- A generic digital transformation manager with no measurable value discipline.
+- A person who labels ordinary workflow automation as AI.
+- A leader who bypasses quality, safety, OT security, process engineering, and frontline ownership.
+
+---
+
+# 2. The high-tech manufacturing context
+
+## Why high-tech manufacturing requires a different AI innovation model
+
+Complex manufacturers operate through a connected value chain rather than a single factory:
+
+```text
+Market need
+  → Product strategy
+  → R&D / materials science / design
+  → PLM and engineering release
+  → Supplier network and planning
+  → Manufacturing execution and quality
+  → Distribution / field service
+  → Commercial, technical support, and customer feedback
+  → Closed-loop learning into design and operations
+```
+
+An effective innovation leader sees this as one system. A local gain can cause an upstream or downstream loss: more throughput may create a quality burden; a planner copilot may produce recommendations that cannot be executed due to material or equipment constraints; a knowledge assistant can create risk if it exposes controlled IP or uses out-of-date procedures.
+
+## The eight realities that must shape every framework
+
+1. **Physical-world consequences matter.** Recommendations can affect product quality, equipment reliability, operator safety, customer commitments, regulatory obligations, and cost of poor quality.
+2. **IT and OT are different environments.** Factory systems have reliability, availability, safety, and latency requirements that differ from office applications. OT connectivity and action permissions must be treated as a designed risk decision, not a technical afterthought.
+3. **Data is distributed and heterogeneous.** Useful evidence may live in MES, SCADA/historians, LIMS, QMS, ERP, PLM, maintenance systems, supplier portals, work instructions, PDFs, spreadsheets, lab notebooks, and expert memory.
+4. **Traceability is a feature, not paperwork.** Users need to know the source, assumptions, time context, and confidence behind recommendations.
+5. **Frontline adoption determines value.** A technically impressive solution that does not fit a shift, engineering review, planner workflow, or customer-support process has no business value.
+6. **Product and process knowledge are strategic assets.** Intellectual property, export controls, customer confidentiality, and controlled documentation constrain how data can be used.
+7. **Plants differ.** Equipment, recipes, product mix, maturity, data quality, local culture, and operational constraints may vary by site; scale must account for variation deliberately.
+8. **The best solution is often not GenAI.** The right answer may be process redesign, standard work, rules, dashboarding, optimization, predictive ML, computer vision, a digital twin, or a combination.
+
+## The high-tech manufacturing AI opportunity map
+
+| Value-chain domain | Typical executive outcomes | High-value AI opportunity families |
+|---|---|---|
+| **R&D and materials / product innovation** | Faster development, stronger IP reuse, fewer experiments, better design choices | Experiment planning, knowledge retrieval, design-space optimization, literature/patent synthesis, test automation support. |
+| **PLM and engineering** | Faster release cycles, stronger traceability, fewer late changes | Requirements traceability, change-impact analysis, BOM/specification intelligence, engineering copilot, digital-thread analytics. |
+| **Supply chain and procurement** | Better service, resilience, inventory/cash, lower expediting | Demand sensing, supply-risk signals, scenario planning, inventory optimization, supplier-document intelligence, exception orchestration. |
+| **Manufacturing operations** | Yield, throughput, uptime, labor effectiveness, energy, safety | Predictive maintenance, anomaly detection, root-cause support, operator knowledge tools, scheduling/optimization, process digital twins. |
+| **Quality and reliability** | First-pass yield, lower scrap/rework, faster containment, better compliance | Visual inspection, defect classification, deviation investigation, quality-document intelligence, SPC augmentation, complaint signal analysis. |
+| **Commercial and technical service** | Faster quotation, higher win rate, better customer experience | Technical knowledge assistant, configuration support, RFP/quote extraction, case triage, proposal drafting, field-service diagnostic support. |
+| **Finance and enterprise services** | Faster close, better controls, lower transaction cost | Exception handling, reconciliation support, variance narrative, policy assistant, document intelligence, control monitoring. |
+| **Technology / cyber / data operations** | Faster service restoration, secure adoption, lower support burden | IT service copilot, incident summarization, observability triage, knowledge search, data quality remediation assistance. |
+
+---
+
+# 3. The AI Innovation Operating System
+
+## The model: SENSE → SHAPE → SELECT → PROVE → SCALE → SUSTAIN
+
+This is a durable operating model for managing the complete opportunity lifecycle. It separates ideation from delivery but creates shared artifacts so nothing is lost during handoff.
+
+| Stage | Goal | Core activities | Mandatory artifact | Decision |
+|---|---|---|---|---|
+| **1. Sense** | Capture signals worth exploring. | Executive listening, frontline observation, strategic scans, idea intake. | Signal card. | Explore, redirect, defer, decline. |
+| **2. Shape** | Convert an idea into a defined opportunity. | Process mapping, user interviews, baseline capture, solution optioning, initial risk/data assessment. | Opportunity canvas. | Advance to scoring, rework, stop. |
+| **3. Select** | Allocate scarce discovery/pilot capacity. | Weighted scoring, sponsorship confirmation, portfolio balancing, dependency review. | Scorecard and decision record. | Fund, sequence, park, stop. |
+| **4. Prove** | Test technical viability, user value, and risk controls. | Prototype/pilot, evaluation, user testing, measurement, architecture validation. | Experiment charter and pilot scorecard. | Scale, revise, contain, stop. |
+| **5. Scale** | Embed and industrialize the solution. | Integration, monitoring, training, operating model, support, deployment waves. | Production business case and operating model. | Scale, hold, retire. |
+| **6. Sustain** | Realize value and improve. | Benefit tracking, drift/quality monitoring, feedback, reuse, decommissioning where appropriate. | Value-realization report and improvement backlog. | Continue, optimize, retire. |
+
+## Stage-gate design
+
+### Gate 0 — Signal quality
+**Question:** Is this a material business problem or an interesting technology request?
+
+Minimum criteria:
+- A named source or sponsor.
+- A recognizable process, decision, or outcome.
+- A reason it matters now.
+- No commitment to technology yet.
+
+### Gate 1 — Opportunity definition
+**Question:** Do we understand enough to decide whether this deserves further investment?
+
+Minimum criteria:
+- A defined user and workflow.
+- A measurable baseline or credible path to obtain one.
+- At least two solution options, including a non-AI option.
+- Preliminary data, integration, risk, and change considerations.
+
+### Gate 2 — Portfolio commitment
+**Question:** Should scarce pilot capacity be allocated now?
+
+Minimum criteria:
+- Named executive sponsor and process owner.
+- A value hypothesis and finance/value partner confirmation.
+- Data and access path.
+- Risk tier, human-accountability design, and informed security/OT review path.
+- Clear pilot outcome and scale/stop decision criteria.
+
+### Gate 3 — Pilot evidence
+**Question:** Does evidence justify production investment?
+
+Minimum criteria:
+- User adoption threshold met or a credible explanation/remediation plan.
+- Quality, safety, reliability, and evaluation thresholds met.
+- Measured workflow impact versus baseline.
+- Production ownership, support, security, and monitoring design are ready.
+
+### Gate 4 — Scale and sustain
+**Question:** Has the business actually realized value, and can this be repeated safely?
+
+Minimum criteria:
+- Benefit owner confirms measurement results.
+- Adoption and operating ownership are sustained.
+- Controls and monitoring are live.
+- Lessons and reusable assets are captured.
+
+## The operational rhythm
+
+| Forum | Cadence | Purpose | Typical attendees | Decision rights |
+|---|---|---|---|---|
+| **Innovation intake huddle** | Weekly, 30 min | Rapidly triage signals and requests. | Innovation lead, product/delivery representative, architect. | Explore, redirect, defer, decline. |
+| **Opportunity-shaping review** | Biweekly, 60 min | Challenge problem framing, evidence, data, risks, and value. | Sponsor delegate, process owner, architect, data/AI lead, risk experts as needed. | Advance, rework, stop. |
+| **Portfolio council** | Monthly, 60–90 min | Fund, sequence, rebalance, and unblock initiatives. | Senior business, IT, finance, risk, and operations leaders. | Fund/sequence/stop/escalate. |
+| **Pilot steering review** | Every 2–4 weeks | Test assumptions and remove blockers. | Sponsor, product owner, delivery lead, innovation lead, control partners. | Continue/revise/stop/scale recommendation. |
+| **Value realization review** | Quarterly | Compare expected and realized value; drive reuse. | Portfolio council and finance/value owner. | Scale, optimize, retire, reinvest. |
+
+## Simple RACI
+
+| Activity | Executive sponsor | Process owner | AI innovation leader | Product/delivery owner | Data / AI architect | OT / security / risk | Finance / value lead |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Define business outcome | A | R | C | C | C | I | C |
+| Run discovery | C | C | R | C | C | I | I |
+| Create value hypothesis | A | R | R | C | C | I | C |
+| Prioritize | A | C | R | C | C | C | C |
+| Design solution | I | C | C | A/R | R | C | I |
+| Approve risk / action boundaries | I | C | C | C | C | A/R | I |
+| Pilot delivery | I | C | C | A/R | R | C | I |
+| Adoption and workflow ownership | A | R | C | R | C | C | C |
+| Measure realized value | A | R | C | C | I | I | R |
+
+**A = accountable; R = responsible; C = consulted; I = informed.**
+
+---
+
+# 4. Success framework: the eight capabilities of a top performer
+
+## 1. Strategic translator
+**Purpose:** Connect enterprise objectives to operational problems worth solving.
+
+What you do:
+- Convert strategy themes—growth, yield, service, cost, resilience, quality, innovation speed, safety—into measurable outcomes.
+- Identify the decision or workflow that creates the gap.
+- Separate “we want AI” from “we need a measurable operational improvement.”
+
+Evidence of mastery:
+- You can explain each portfolio item in the language of the relevant executive, plant leader, engineer, or commercial leader.
+- Every opportunity has a documented link to a strategic priority and a measurement owner.
+
+## 2. Manufacturing systems thinker
+**Purpose:** Understand that a plant, supply chain, product lifecycle, and commercial process are connected systems.
+
+What you do:
+- Map upstream/downstream effects before optimizing one step.
+- Recognize physical, quality, safety, reliability, and regulatory constraints.
+- Ask whether an opportunity affects design, planning, process control, inspection, release, customer commitment, or field behavior.
+
+Evidence of mastery:
+- You routinely bring operations, quality, engineering, supply chain, and IT/OT together before proposing a solution.
+
+## 3. Structured discovery facilitator
+**Purpose:** Turn vague pain into an actionable opportunity without making people defensive.
+
+What you do:
+- Run short, decision-oriented conversations and workshops.
+- Make friction visible: waiting, searching, rekeying, reconciling, exceptions, handoffs, rework, uncertainty, and expert bottlenecks.
+- Translate narratives into a hypothesis, baseline, and next evidence step.
+
+Evidence of mastery:
+- Stakeholders leave a session with a ranked shortlist, named owners, and next decisions—not a list of ideas without commitments.
+
+## 4. AI and automation solution shaper
+**Purpose:** Match the problem to the right solution pattern.
+
+What you do:
+- Consider process redesign, rules, workflow automation, analytics, ML, optimization, computer vision, RAG, copilots, agents, and digital twins.
+- Propose the least complex approach that can safely improve the workflow.
+- Articulate the data, evaluation, integration, and control implications of each option.
+
+Evidence of mastery:
+- You prevent unnecessary “agent” projects and avoid under-solving genuine prediction/optimization/vision problems.
+
+## 5. Portfolio and value manager
+**Purpose:** Put capacity where it creates material impact.
+
+What you do:
+- Score opportunities transparently.
+- Balance quick wins, strategic bets, shared foundations, and time-boxed learning.
+- Require a benefit owner, baseline, target, realization mechanism, and stop condition.
+
+Evidence of mastery:
+- The portfolio has a visible funnel, decision log, and clear evidence that low-value work is stopped early.
+
+## 6. Responsible AI, safety, and OT-aware leader
+**Purpose:** Surface risk and controls early rather than discovering blockers after a pilot.
+
+What you do:
+- Risk-tier use cases based on impact and autonomy.
+- Start operational use cases as bounded decision support unless strong safety and control evidence supports a higher autonomy level.
+- Bring in OT/security/quality/legal/compliance partners according to the risk tier.
+
+Evidence of mastery:
+- Controls enable delivery by making action boundaries, data access, human accountability, evaluation, monitoring, and rollback explicit.
+
+## 7. Adoption and change leader
+**Purpose:** Ensure value reaches the workflow rather than staying in a dashboard or pilot.
+
+What you do:
+- Define who will use the solution, when, what decision/action changes, and what makes the output trustworthy.
+- Involve frontline users and process owners during shaping—not only after development.
+- Build training, SOP changes, support, feedback, incentives, and exception-handling into the plan.
+
+Evidence of mastery:
+- User behavior and workflow measures are treated as first-class pilot metrics.
+
+## 8. Executive storyteller and connector
+**Purpose:** Create commitment across technical and business groups.
+
+What you do:
+- Use a clear narrative: outcome → problem → evidence → options → recommendation → decision required.
+- Translate technical complexity into business choices without hiding material risk.
+- Build trust by visibly giving credit to plant, engineering, data, and delivery partners.
+
+Evidence of mastery:
+- Senior leaders ask you to frame difficult decisions, not just prepare slides.
+
+---
+
+# 5. Enterprise opportunity architecture
+
+## The opportunity hierarchy
+
+Do not manage every idea at the same level. Use a four-layer structure.
+
+```text
+Enterprise value theme
+  └── Capability / domain objective
+        └── Opportunity family
+              └── Specific use case / product increment
+```
+
+### Example
+
+```text
+Value theme: Improve manufacturing margin
+  └── Capability objective: Reduce quality losses in critical process families
+        └── Opportunity family: Earlier detection and faster investigation of process excursions
+              ├── Anomaly detection
+              ├── Root-cause evidence assistant
+              ├── Vision-based defect classification
+              └── CAPA / deviation documentation assistant
+```
+
+This hierarchy allows leadership to fund a coherent capability rather than an unconnected collection of experiments.
+
+## The four portfolio lanes
+
+| Lane | Characteristics | Typical duration | What success means |
+|---|---|---:|---|
+| **Quick wins** | High readiness; bounded workflow; visible local value. | 4–12 weeks to evidence. | Trust, adoption, measurable savings/capacity, reusable pattern. |
+| **Strategic bets** | High value; multiple dependencies; cross-functional impact. | 1–4 quarters. | Differentiated capability or material operating impact. |
+| **Foundation investments** | Shared identity, data, knowledge, evaluation, observability, or governance capability. | 1–4 quarters. | Multiple use cases become faster, safer, cheaper to deliver. |
+| **Explore / learn** | Uncertain technology/value; learning is a valid objective. | 2–6 weeks. | Clear decision: advance, reframe, or stop. |
+
+## The “innovation funnel” target state
+
+The exact volumes vary by organization, but a healthy funnel should show progressive evidence, not simply large intake volume.
+
+| Funnel stage | What is counted | Healthy sign |
+|---|---|---|
+| **Signals** | Raw ideas and pain points. | Broad input from business, engineering, plants, and enterprise functions. |
+| **Qualified opportunities** | Clear sponsor, process, and outcome. | Low-quality technology-first requests are filtered early. |
+| **Shaped opportunities** | Canvas, options, baseline, initial risk/data view. | Leaders can compare apples to apples. |
+| **Funded proofs** | Time-boxed charters with success/stop thresholds. | The organization can say no to weak ideas. |
+| **Scaled products** | Integrated, governed, supported workflow improvements. | Most investment is focused on a limited number of scalable priorities. |
+| **Realized value** | Finance/business-confirmed benefits. | Benefits are tracked after launch, not merely forecast. |
+
+---
+
+# 6. Discovery and workshop system
+
+## The SPARK discovery method
+
+| Step | Core question | Output |
+|---|---|---|
+| **S — Strategic outcome** | Which business result matters now: growth, margin, quality, capacity, service, cash, resilience, safety, or speed? | Outcome statement. |
+| **P — Process and persona** | Which workflow, role, decision, and handoff are affected? | Current-state process sketch and user map. |
+| **A — Analyze friction** | Where do people wait, search, rekey, reconcile, escalate, rework, guess, or apply expert judgment? | Friction inventory and baseline. |
+| **R — Reframe solution options** | Is the best intervention process redesign, rules, analytics, ML, optimization, vision, RAG, copilot, agent, or digital twin? | Options matrix. |
+| **K — Keep value accountable** | How will a business owner know the improvement worked? | KPI, baseline, target, owner, measurement plan. |
+
+## First discovery interview: 15 questions
+
+1. Which outcome is under the greatest pressure today?
+2. What is the specific decision, workflow, or handoff that contributes to the problem?
+3. Who performs it, when, and how frequently?
+4. What does “good” look like today, and how variable is performance?
+5. Where do teams wait, search, re-enter information, reconcile data, escalate, or rework?
+6. What does an error, delay, scrap event, missed commitment, or poor decision cost?
+7. What information is needed but difficult to locate, trust, reconcile, or interpret?
+8. What expert judgment is applied? Could it be described as rules, examples, constraints, or patterns?
+9. What past efforts have been tried, and why did they not solve the issue?
+10. What systems, documents, data sources, images, or sensor data are involved?
+11. What must remain human-approved, and why?
+12. What action could a system recommend, prioritize, predict, draft, route, validate, or execute?
+13. What would make a frontline user distrust or ignore the output?
+14. Which KPI could be baselined in the next two weeks?
+15. In six months, what outcome would make the sponsor call this a material success?
+
+## A 90-minute executive discovery workshop
+
+### Preparation, five business days ahead
+
+Ask attendees to bring:
+- One strategic outcome under pressure.
+- Up to three recurring bottlenecks or decision delays.
+- A simple process outline and the systems/data involved.
+- Known metrics or reports.
+- Previous attempts, lessons, and constraints.
+- Names of frontline SMEs and process owners.
+
+### Agenda
+
+| Minutes | Activity | Facilitator move | Output |
+|---:|---|---|---|
+| 0–10 | Set the frame | “We are selecting problems worth solving, not choosing technology.” | Shared success definition. |
+| 10–20 | Strategic outcome | Ask each leader to name the result most constrained. | 2–3 priority outcomes. |
+| 20–40 | Map friction | Capture waits, rework, search, decisions, exceptions, and handoffs. | Pain-point map. |
+| 40–55 | Generate intervention options | Match pain points to solution patterns. | Opportunity longlist. |
+| 55–70 | Fast value/readiness screen | Separate high-value candidates from “interesting” ideas. | Ranked shortlist. |
+| 70–80 | Define evidence needed | Name sponsor, process owner, baseline, SME, data source, and decision date. | Discovery charters. |
+| 80–90 | Close commitments | Read back decisions, owners, dates, and risks. | Decision log. |
+
+### Whiteboard structure
+
+```text
+LEFT: OUTCOMES                       MIDDLE: PROCESS FRICTION                  RIGHT: OPTION PATTERNS
+- Growth / margin                    - Waiting / handoffs                       - Process redesign
+- Quality / yield                    - Search / fragmented knowledge            - Rules / workflow
+- Service / reliability               - Expert bottleneck                        - Analytics / ML
+- Safety / risk / compliance          - Rework / exceptions                      - Optimization / vision
+                                      - Variability / uncertainty                - RAG / copilot / agent
+
+BOTTOM: VALUE AND NEXT DECISION
+- Baseline | target | sponsor | process owner | data | risk tier | next decision date
+```
+
+### Useful facilitator language
+
+- “What decision is slow, inconsistent, expensive, or hard to audit today?”
+- “What evidence would prove the value before we commit to a platform?”
+- “Which part is deterministic enough for workflow or rules rather than AI?”
+- “What should an assistant never be allowed to decide or do?”
+- “What will the operator, engineer, planner, or customer-facing user actually change?”
+- “Who owns the metric after the pilot is over?”
+
+## Gemba-style frontline observation
+
+For factory and engineering opportunities, interviews are not enough. Observe the work where it happens.
+
+| Observe | Look for | Capture |
+|---|---|---|
+| Shift handoffs | Information lost, repeated questions, hidden workarounds. | Handoff artifacts, timing, exception types. |
+| Troubleshooting | Search effort, expert dependence, data context switching. | Information sources, decision points, evidence gaps. |
+| Quality inspection | Variation, fatigue, rework, false alarms, evidence capture. | Defect taxonomy, image/process data availability, escalation path. |
+| Maintenance | Reactive work, planning gaps, parts constraints, knowledge reuse. | Work order flow, failure modes, time-to-diagnose. |
+| Planning | Manual scenario comparison, exceptions, data reconciliation. | Decision cadence, constraints, planner override logic. |
+| Engineering changes | Manual traceability, document review, late discovery of impacts. | Required artifacts, approvals, source systems, release bottlenecks. |
+
+**Rule:** Never assume that a visible manual task is the root problem. The manual effort may be compensating for poor data, unclear ownership, policy exceptions, unreliable upstream systems, or local workarounds.
+
+---
+
+# 7. Opportunity framing: the one-page canvas
+
+Use one page so people must be clear. The purpose is not paperwork; it is alignment.
+
+```markdown
+# AI Opportunity Canvas
+
+## 1. Plain-language title
+Name the business improvement, not the technology.
+
+## 2. Business problem and urgency
+What occurs today? Who experiences it? Why does it matter now?
+
+## 3. Strategic outcome
+Which business objective does this support?
+
+## 4. Current process and friction
+Trigger → steps → systems/documents → handoffs → failure points.
+
+## 5. Users, decisions, and actions
+Who will use it? What decision/action changes? What remains human-owned?
+
+## 6. Candidate options
+List at least two viable approaches, including a non-AI option.
+
+## 7. Value hypothesis
+Baseline; target; volume; formula; benefit owner; realization mechanism.
+
+## 8. Data, knowledge, and integration needs
+Sources; access; data quality; classification; ownership; refresh; APIs/tools.
+
+## 9. Risk, safety, and accountability
+Risk tier; prohibited actions; human approval points; evaluation; monitoring; rollback.
+
+## 10. Delivery hypothesis
+Pilot scope; team; dependencies; timeline; success and stop thresholds.
+
+## 11. Recommendation and next decision
+Explore, prototype, pilot, scale, park, or stop.
+```
+
+## Example: fictional process-excursion investigation assistant
+
+| Canvas field | Example |
+|---|---|
+| **Problem** | Process engineers gather information from equipment history, batch records, process notes, and prior incidents after an excursion. Investigation speed and completeness vary with experience. |
+| **User / action** | A process engineer decides what evidence to review, which hypothesis to pursue, and which escalation path to follow. |
+| **Options** | Improve taxonomy/search; create curated knowledge retrieval; develop anomaly detection; combine workflow, evidence retrieval, and human review. |
+| **Value hypothesis** | Reduce time-to-triage; improve investigation completeness; reduce repeat excursions. Baselines and cost mechanisms must be validated. |
+| **Control design** | No automatic process changes. All generated content cites approved sources, labels uncertainty, logs use, and requires engineer approval. |
+| **Pilot** | One product/process family; limited, approved corpus; selected engineers; predefined quality, time, and adoption thresholds. |
+
+---
+
+# 8. Technology-fit and solution decision framework
+
+## Core principle
+
+> Choose the least complex solution that reliably improves the workflow and can be governed at the required risk level.
+
+## Solution pattern matrix
+
+| Pattern | Use it when | Avoid it when | Evidence required |
+|---|---|---|---|
+| **Process redesign / standard work** | Root cause is unclear ownership, unnecessary handoffs, poor workflow, or inconsistent work instructions. | A genuine prediction, optimization, or knowledge need remains after redesign. | Process map, cycle-time and rework data. |
+| **Rules + workflow automation** | Decisions are stable, deterministic, policy-based, and exceptions can be codified. | Context is ambiguous, language-heavy, or changes often. | Rules inventory, exception rate, system integration path. |
+| **BI / analytics** | Users lack trusted visibility, timely reporting, or root-cause exploration. | The outcome needs prediction, recommendation, or action orchestration. | Data quality, semantic definitions, decision-use case. |
+| **Predictive ML** | Historical outcomes exist and prediction/classification will change a decision. | There is no stable target outcome or no one will act on the prediction. | Labeled history, data sufficiency, evaluation plan, action playbook. |
+| **Optimization** | Objectives, constraints, and trade-offs can be expressed mathematically. | The objective is undefined or work depends primarily on unstructured knowledge. | Constraint definitions, scenario data, operational acceptance of recommendations. |
+| **Computer vision** | Images/video drive quality, safety, or inspection decisions. | Signal is weak, labels are unreliable, or false positive/negative tolerance is unknown. | Image quality, label method, defect taxonomy, performance thresholds. |
+| **Digital twin / simulation** | Decisions involve physical assets/processes and scenario testing can improve design, operations, or maintenance. | Underlying process model/data is too immature to support meaningful simulation. | System boundaries, telemetry, process model, validation method. |
+| **RAG / knowledge assistant** | Users need answers from controlled manuals, procedures, records, standards, or prior cases. | Corpus is uncontrolled, stale, inaccessible, or answer quality cannot be evaluated. | Curated sources, permissions, citation design, evaluation set. |
+| **Copilot** | A person repeatedly drafts, summarizes, analyzes, compares, or prepares work for a decision. | Task should be deterministic automation or no clear workflow/user exists. | Task time study, user acceptance criteria, grounding method. |
+| **Agent with human approval** | A bounded multi-step workflow can call approved tools and a human can approve consequential actions. | Actions are irreversible, safety-sensitive, high-risk, or poorly observable. | Tool inventory, action policy, audit log, approvals, test scenarios. |
+| **Autonomous agent** | Boundaries are strict, failures are reversible, and continuous monitoring/rollback are mature. | Action affects safety, quality release, production control, finance, legal commitments, or customers without clear accountability. | Extensive evaluations, guardrails, rollback, incident response, ownership. |
+
+## A decision tree
+
+```text
+1. Is the root issue mainly unclear process, ownership, or standard work?
+   └─ Yes → redesign/standardize first.
+
+2. Is the decision deterministic and rule-based?
+   └─ Yes → rules/workflow automation.
+
+3. Is the main need trusted visibility, explanation, or exploration?
+   └─ Yes → analytics/BI.
+
+4. Do historical data and outcomes support prediction/classification?
+   └─ Yes → predictive ML.
+
+5. Do clear objectives and constraints define the decision?
+   └─ Yes → optimization/simulation.
+
+6. Is visual evidence central?
+   └─ Yes → computer vision.
+
+7. Is the bottleneck access to approved unstructured knowledge?
+   └─ Yes → RAG/knowledge assistant.
+
+8. Does a human need drafting, analysis, or decision support?
+   └─ Yes → copilot.
+
+9. Is there a multi-step workflow with approved tools and safe human checkpoints?
+   └─ Yes → agent with human approval.
+
+10. Is autonomous action truly required and safe enough?
+   └─ Only then consider bounded autonomy.
+```
+
+## Agent readiness test
+
+Before calling something an “agent,” answer **yes** to all of these:
+
+- Is this truly a multi-step workflow rather than a one-shot answer?
+- Are inputs, tools, permissions, and allowed actions explicit?
+- Can every tool call and action be logged and reviewed?
+- Are there defined approval points for consequential actions?
+- Can the system recover, escalate, or roll back safely?
+- Is there an evaluation suite that includes normal, edge, adversarial, and failure cases?
+- Is a non-agent alternative insufficient?
+
+If any answer is no, begin with a copilot, workflow automation, or knowledge assistant instead.
+
+---
+
+# 9. Manufacturing AI use-case portfolio
+
+The table below is a reusable hypothesis library—not a prescribed roadmap. Every idea still needs discovery, baseline, risk assessment, sponsor ownership, and evidence.
+
+## R&D, materials science, and engineering
+
+| Opportunity | Typical pattern | Primary value | Key data / prerequisites | Critical control |
+|---|---|---|---|---|
+| Experiment planning assistant | Optimization + copilot | Fewer experiments, faster learning | Historical experiments, properties, constraints | Expert approval; retain experimental traceability. |
+| Scientific literature / patent synthesis | Search + RAG + citation review | Faster research orientation | Licensed content, patents, internal reports | IP, licensing, export-control review. |
+| Formulation or design-space optimization | ML / optimization | Better performance, reduced material use | Comparable experimental outcomes | Validate recommendations before lab/production use. |
+| Test-plan drafting assistant | Copilot + templates | Engineering capacity, consistency | Approved templates, standards, requirements | Engineering reviewer remains accountable. |
+| Requirements traceability assistant | RAG / knowledge graph | Faster impact analysis, auditability | Requirements, specs, test evidence | Source-linked outputs; no invented trace links. |
+| Engineering change impact analysis | Graph + RAG + workflow | Faster change decisions, fewer late issues | BOMs, drawings, specs, changes, test data | Mandatory human approval and release governance. |
+| Failure-mode knowledge assistant | RAG + structured taxonomy | Faster troubleshooting/design learning | FMEA, CAPA, field returns, test records | Restrict access by product/IP domain. |
+
+## Supply chain, procurement, and planning
+
+| Opportunity | Typical pattern | Primary value | Key data / prerequisites | Critical control |
+|---|---|---|---|---|
+| Demand sensing | Forecasting / ML | Better service and inventory | Order history, forecasts, external/internal signals | Explain assumptions; planner override. |
+| Supply-risk sensing | Analytics + knowledge extraction | Earlier visibility to supplier/material/logistics risks | Supplier data, news/alerts where permitted, lead times | Human review before supplier actions. |
+| Constraint-based production planning | Optimization | Better throughput, service, inventory | Capacities, routings, materials, demand, constraints | Planner/operations approval; scenario transparency. |
+| Inventory optimization | Optimization / forecasting | Lower working capital, better availability | Demand, lead time, variability, policy constraints | Guardrails for service and critical materials. |
+| Purchase order / contract intelligence | Document AI + workflow | Faster processing, fewer exceptions | Contracts, PO documents, policy rules | Approval workflow and auditability. |
+| Planner exception copilot | Analytics + RAG + workflow | Less manual reconciliation, faster response | ERP/MRP signals, constraints, SOPs | No autonomous commitments without approval. |
+| Supplier quality signal analysis | Analytics / NLP | Earlier quality-risk insight | Supplier defects, SCARs, audits, incoming inspection | Protect supplier data; follow escalation procedure. |
+
+## Manufacturing operations, maintenance, and energy
+
+| Opportunity | Typical pattern | Primary value | Key data / prerequisites | Critical control |
+|---|---|---|---|---|
+| Process anomaly detection | ML / statistical monitoring | Earlier issue detection, lower loss | Sensor/historian data, known events | Validate alert actionability; avoid alarm fatigue. |
+| Root-cause evidence assistant | RAG + analytics | Faster investigation, better evidence consistency | Batch/process history, deviations, SOPs, maintenance notes | Evidence citations; engineer owns conclusion. |
+| Predictive maintenance | ML / condition monitoring | Less downtime, better spares planning | Work orders, failure history, condition data | Maintenance planner decides interventions. |
+| Operator knowledge assistant | RAG + copilot | Faster resolution, stronger standard work | Controlled work instructions, manuals, shift notes | Role-based access; visible source and version. |
+| Dynamic scheduling | Optimization | Better asset use and delivery performance | Machine availability, jobs, constraints, labor, material | Supervisor approval; safety/quality rules hard-coded. |
+| Energy optimization | Optimization / digital twin | Lower energy cost/intensity | Metering, production, tariffs, process constraints | Never override safety or process-control limits. |
+| Digital shift handoff | Workflow + summarization | Better continuity, lower repeated investigation | Shift logs, alarms, work orders | Human review; preserve official record. |
+| Process digital twin | Simulation / hybrid modeling | Better scenario testing and optimization | Process model, telemetry, validation data | Use as decision support until validated. |
+
+## Quality, reliability, and regulatory operations
+
+| Opportunity | Typical pattern | Primary value | Key data / prerequisites | Critical control |
+|---|---|---|---|---|
+| Visual quality inspection | Computer vision | Better inspection consistency/speed | Image capture, labeled defects, lighting/fixture control | Validate false positives/negatives; human containment path. |
+| Defect classification / triage | Vision / ML | Faster disposition and prioritization | Defect images, categories, outcomes | Clear escalation for low-confidence cases. |
+| CAPA / deviation drafting support | RAG + copilot | Faster documentation, better consistency | Controlled procedures, approved templates, records | Human quality approval; audit trail. |
+| Complaint and field-failure signal analysis | NLP + analytics | Earlier reliability insights | CRM, returns, failure reports, service notes | Validate data quality and product-family classification. |
+| Quality record retrieval | RAG | Faster audit/investigation preparation | QMS, test certificates, batch records | Permissions, source citation, document versioning. |
+| Statistical process control augmentation | Analytics / anomaly detection | Faster detection and investigation | Process/quality measures | Maintain existing validated controls; do not bypass SPC governance. |
+| Audit evidence assistant | RAG + workflow | Faster evidence gathering | Controlled records, audit requirements | Validate completeness and permitted disclosure. |
+
+## Commercial, product support, and field service
+
+| Opportunity | Typical pattern | Primary value | Key data / prerequisites | Critical control |
+|---|---|---|---|---|
+| Technical product knowledge assistant | RAG + role-aware access | Faster response, better knowledge reuse | Product documents, technical bulletins, manuals | Citations, access control, current content ownership. |
+| Quote/RFP intake extraction | Document AI + workflow | Faster quoting, fewer omissions | Customer requests, pricing/configuration rules | Human commercial approval. |
+| Configuration support | Rules + knowledge / optimization | Faster accurate solution design | Product rules, BOMs, compatibility constraints | No customer commitment without validation. |
+| Technical proposal drafting | Copilot + templates | Sales engineering capacity | Approved content and product information | Legal/commercial review; never fabricate specs. |
+| Service case triage | Classification + RAG | Faster routing and resolution | Ticket history, knowledge articles, product data | Escalation for safety/critical cases. |
+| Field diagnostic assistant | RAG + guided workflow | Faster repair/maintenance | Service manuals, diagnostics, fault codes | Technician accountable; offline/secure deployment considerations. |
+| Voice-of-customer synthesis | NLP / analytics | Better product/service insight | Calls, surveys, cases, feedback | Consent/privacy and customer-data controls. |
+
+## Finance, HR, IT, and enterprise services
+
+| Opportunity | Typical pattern | Primary value | Key data / prerequisites | Critical control |
+|---|---|---|---|---|
+| Close/variance analyst | Analytics + copilot | Faster reporting, better explanations | Governed financial data, approved calculations | Finance review and source traceability. |
+| Invoice exception handling | Document AI + workflow | Lower transaction effort, stronger controls | Invoice/PO/receipt data, business rules | Segregation of duties and approvals. |
+| Policy and procedure assistant | RAG | Employee self-service, fewer repetitive inquiries | Current controlled policies | Role-based access and source attribution. |
+| Workforce skills intelligence | Analytics / knowledge graph | Better capability planning | Skills, roles, training, workforce data | Privacy, fairness, HR/legal review. |
+| IT service desk assistant | RAG + workflow | Faster resolution, deflection | Ticket history, runbooks, CMDB | Least-privilege tool access and audit logs. |
+| Incident triage/summarization | Analytics + copilot | Lower MTTR, better communication | Logs, alerts, incident records | Human incident commander retains authority. |
+| Data-quality remediation assistant | Rules + AI support | Faster data issue diagnosis | Data catalog, lineage, DQ results | Human approval for data correction. |
+
+---
+
+# 10. Prioritization, funding, and portfolio management
+
+## Weighted opportunity scorecard
+
+Score each factor from **1–5**. The score creates transparent comparison; it is not a promise of ROI.
+
+| Dimension | Weight | What a “5” means |
+|---|---:|---|
+| **Business value potential** | 20 | Material, measurable impact on revenue, margin, quality, capacity, service, cash, safety, or risk. |
+| **Strategic alignment** | 15 | Direct support for a stated enterprise/domain priority. |
+| **Data / knowledge readiness** | 15 | Sources exist, are accessible, sufficiently reliable, and have an accountable owner. |
+| **Execution feasibility** | 15 | Integration, skills, budget, timeline, and delivery capacity are realistic. |
+| **Workflow and adoption fit** | 10 | User benefit is clear and the process owner has a credible change path. |
+| **Risk manageability** | 10 | Risks can be reduced through scope, controls, human accountability, and monitoring. |
+| **Time to evidence** | 10 | A credible pilot answer can be obtained in roughly one quarter or less. |
+| **Sponsorship strength** | 5 | Executive sponsor/process owner will make decisions and support adoption. |
+
+```text
+Portfolio Score = Σ (dimension score ÷ 5 × dimension weight)
+```
+
+## Decision bands
+
+| Score | Default decision | Meaning |
+|---:|---|---|
+| **80–100** | Prioritize | Strong candidate for pilot or rapid delivery. |
+| **65–79** | Shape / sequence | Worth more discovery; resolve explicit readiness gaps. |
+| **50–64** | Park | Potentially useful, but not ready or insufficiently differentiated. |
+| **Below 50** | Stop / redirect | Do not invest scarce innovation capacity unless context changes. |
+
+## Non-negotiable pilot entry gates
+
+An initiative should not receive pilot investment without:
+
+1. A named executive sponsor.
+2. A named process owner accountable for adoption.
+3. A baseline and success threshold.
+4. A documented value mechanism—not merely “time saved.”
+5. A credible data/knowledge and access path.
+6. A preliminary risk tier, accountability design, and required control reviews.
+7. A defined decision at pilot end: scale, revise, contain, park, or stop.
+
+## Balanced portfolio design
+
+Avoid a single ranked list. Use the four lanes and intentionally decide capacity distribution.
+
+| Portfolio category | Practical question |
+|---|---|
+| **Quick wins** | What can prove value and build trust within a quarter? |
+| **Strategic bets** | What could materially differentiate operations or customer value in 12–24 months? |
+| **Foundations** | Which shared capabilities reduce cost/risk and accelerate many use cases? |
+| **Exploration** | What must we learn now, cheaply and time-boxed, before competitors or the business force a larger commitment? |
+
+## Portfolio council decision packet
+
+Every monthly portfolio discussion should use the same one-page format:
+
+```text
+Opportunity title and sponsor
+Strategic outcome and baseline
+Current status and next gate
+Score and lane
+Value range and key assumptions
+Top three dependencies / risks
+Decision requested
+Funding / capacity required
+What happens if delayed or declined
+```
+
+---
+
+# 11. Business case and value-realization framework
+
+## The five value types
+
+| Value type | Formula concept | Evidence required |
+|---|---|---|
+| **Hard cost reduction** | Avoided spend or eliminated external/internal cost. | Budget/contract owner confirms a cost can actually be removed. |
+| **Productivity / capacity** | Volume × time saved × adoption × usable capacity conversion × fully loaded cost. | Time study, usage data, business plan for redeploying capacity. |
+| **Revenue / margin** | Improved conversion, speed, retention, yield, or price realization × contribution margin. | Baseline commercial/production data and finance-approved model. |
+| **Working capital / cash** | Inventory, receivables, payables, or asset-use improvement × cost of capital / cash impact. | Finance-approved baseline and mechanism. |
+| **Risk / quality / service** | Reduced incidents/errors/scrap/warranty events × expected cost per event. | Event history, quality/incident data, risk-owner validation. |
+
+## The productivity warning
+
+**Hours saved are not automatically financial savings.** They become value only when the business can convert them into one or more of:
+- increased output without additional hiring;
+- reduced overtime or contractor spend;
+- redeployment to work that removes a bottleneck;
+- avoided future hiring;
+- reduced cycle time with a measurable commercial/operational effect.
+
+## Value hypothesis template
+
+```text
+Outcome: Reduce time-to-triage for process excursions.
+
+Baseline: 12 hours average from event creation to initial evidence package.
+Target: 25% reduction without lower investigation completeness.
+Population: 1,200 qualifying excursions per year.
+Mechanism: Reallocate engineering capacity to preventive process improvement and reduce repeat-event exposure.
+Owner: Plant/process engineering leader.
+Measurement: Time stamps + quality review sampling + adoption telemetry.
+Review points: Week 4, week 8, pilot close, quarter after deployment.
+Stop condition: No material time improvement, low adoption, or quality/control threshold failure.
+```
+
+## Benefit-realization handshake
+
+Before pilot approval, confirm this in writing.
+
+| Field | Accountable party | Why it matters |
+|---|---|---|
+| Baseline metric | Process owner + finance/value lead | Stops post-pilot arguments about measurement. |
+| Target | Executive sponsor | Makes the ambition explicit. |
+| Measurement method | Product/delivery + data lead | Creates credible instrumentation. |
+| Benefit owner | Business leader | Someone owns conversion of improvement into value. |
+| Realization mechanism | Business + finance | Distinguishes impact from aspiration. |
+| Review cadence | Sponsor | Ensures value tracking survives launch. |
+| Stop condition | Sponsor + innovation lead | Creates permission to end weak work. |
+
+## Pilot scorecard
+
+| Dimension | What to measure |
+|---|---|
+| **Adoption** | Eligible-user activation, repeat use, workflow completion, override/abandon rate. |
+| **Task quality** | Accuracy, completeness, grounded evidence, reviewer acceptance, error categories. |
+| **Workflow impact** | Cycle time, rework, queue age, defect containment time, planner effort, response speed. |
+| **Safety / risk** | Policy violations, prohibited actions, hallucination/false recommendation severity, unauthorized access. |
+| **Economic value** | Measured benefit compared with case assumptions and implementation/operating cost. |
+| **Operational readiness** | Support, monitoring, ownership, data refresh, incident response, user training. |
+
+---
+
+# 12. Governance, safety, OT security, and responsible AI
+
+## Practical governance foundations
+
+This playbook uses the logic of the NIST AI RMF: **Govern, Map, Measure, Manage**. It also recognizes the need for an organization-wide AI management-system approach, as described by ISO/IEC 42001. In industrial settings, AI designs must additionally respect the distinctive reliability, availability, and safety expectations of OT environments.
+
+| Governance function | What it means here | Required practical artifact |
+|---|---|---|
+| **Govern** | Define ownership, policy, risk appetite, decision rights, and escalation. | AI policy, RACI, portfolio charter, risk tiers, decision log. |
+| **Map** | Understand context, users, impacts, data, dependencies, and potential harms. | Opportunity canvas, process/data map, risk assessment. |
+| **Measure** | Evaluate quality, safety, security, reliability, usability, and business effect. | Evaluation plan, acceptance thresholds, test cases, pilot scorecard. |
+| **Manage** | Mitigate, monitor, respond, improve, and retire. | Controls backlog, monitoring plan, incident runbook, scale/stop decision. |
+
+## Risk tiers
+
+| Tier | Typical examples | Minimum control posture |
+|---|---|---|
+| **1 — Low impact productivity** | Internal drafting, summarization, meeting notes, generic research using approved tools. | Approved data use, user notice, basic logging, no consequential automation. |
+| **2 — Managed decision support** | Knowledge assistant, analysis copilot, technical drafting, workflow recommendations. | Grounding, citations where appropriate, access control, evaluation, audit logs, named human decision owner. |
+| **3 — High-impact operational support** | Recommendations affecting manufacturing, quality, supply, customers, finance, safety, or regulated processes. | Formal risk review, stronger evaluation, monitoring, escalation/rollback, documented accountability. |
+| **4 — Autonomous consequential action** | Systems that execute material actions with limited human intervention. | Exceptional approval, explicit policy/permissions, deep testing, continuous monitoring, incident readiness, rollback. |
+
+## Manufacturing autonomy ladder
+
+| Level | System behavior | Suitable early use? | Example |
+|---|---|---:|---|
+| **0. Inform** | Retrieves, summarizes, displays evidence. | Yes | Shows prior deviations and relevant SOPs. |
+| **1. Recommend** | Suggests next checks or ranked options. | Yes, with review | Recommends likely cause categories. |
+| **2. Prepare** | Drafts work, tickets, reports, schedules, or actions for approval. | Often | Drafts a deviation investigation package. |
+| **3. Execute with approval** | Takes a bounded action after a designated approver accepts it. | Selectively | Creates a maintenance work order after supervisor approval. |
+| **4. Bounded autonomy** | Takes reversible low-consequence actions within strict policies. | Rarely / later | Reclassifies low-risk internal tickets. |
+| **5. Open-ended autonomy** | Makes consequential decisions/actions without meaningful human review. | Normally no | Directly changes production parameters or releases product. |
+
+**Default in manufacturing:** Begin at Levels 0–2. Move to Level 3 only after strong controls, measured performance, accountable ownership, and safe recovery. Treat Levels 4–5 as exceptional decisions, especially near safety, quality release, process control, financial commitments, or customers.
+
+## Day-one control questions for every GenAI or agent concept
+
+1. What data is used, and what is its classification?
+2. What IP, export-control, customer confidentiality, privacy, or record-retention constraints apply?
+3. Who may access the data, tool, and outputs?
+4. Which sources are authoritative, current, approved, and version-controlled?
+5. Must output cite sources or show underlying evidence?
+6. What output error would be unacceptable?
+7. Who remains accountable for the decision or action?
+8. What actions are prohibited, and which require approval?
+9. What evaluation dataset represents real operating conditions and edge cases?
+10. What telemetry, logging, feedback, and incident pathway will reveal failure or drift?
+11. How can the system be paused, corrected, rolled back, or retired?
+12. What changes when the system is reused at another plant, product family, geography, or customer segment?
+
+## OT-specific guardrails
+
+In OT-connected environments, use a stricter design posture:
+
+- **Keep IT/OT exposure intentional.** Do not assume a corporate AI platform should directly access plant control systems.
+- **Use least privilege and segmented access.** Permission to read historian data is different from permission to write a work order, which is different from permission to change a control parameter.
+- **Do not allow uncontrolled model outputs into control loops.** Any recommendation that could affect equipment, recipes, process conditions, safety systems, or quality release requires a designed approval and validation path.
+- **Design for availability and degraded operation.** The plant must have a safe manual fallback when AI, network connectivity, or data feeds are unavailable.
+- **Treat false confidence as a risk.** An authoritative sounding answer without evidence can be more dangerous than no answer.
+- **Engage controls, process engineering, safety, OT security, and quality early.** Their input is part of the design, not a final approval hurdle.
+
+## AI evaluation approach
+
+| Evaluation area | Questions to test |
+|---|---|
+| **Correctness** | Is the output factually and procedurally correct? |
+| **Grounding / traceability** | Can a user see source evidence and version context? |
+| **Completeness** | Does the output cover required fields/steps? |
+| **Safety** | Does it avoid prohibited or unsafe advice/actions? |
+| **Security / access** | Does it respect permissions and avoid data leakage? |
+| **Robustness** | How does it behave on incomplete, conflicting, noisy, adversarial, or unusual inputs? |
+| **Usability** | Can the intended user understand and act on it at the point of work? |
+| **Operational performance** | Is latency, availability, and supportability fit for the workflow? |
+| **Business impact** | Does it improve the agreed KPI versus baseline? |
+
+---
+
+# 13. Pilot-to-scale delivery framework
+
+## What a pilot is for
+
+A pilot is not a small production release and not a demo. It is a **structured experiment to reduce the highest-risk assumptions** before scaling.
+
+## The pilot charter
+
+```markdown
+# AI Pilot Charter
+
+## Business outcome and sponsor
+What materially improves, and who owns the outcome?
+
+## Hypotheses
+- User hypothesis: [role] will use [capability] to improve [workflow].
+- Value hypothesis: [metric] will improve from [baseline] to [target].
+- Technical hypothesis: [solution] can meet [quality/latency/integration] threshold.
+- Risk hypothesis: controls will keep [defined risk] within acceptable limits.
+
+## Scope
+In-scope users, site/product family, workflow steps, data sources, tools, time period.
+
+## Out of scope
+Explicitly state excluded autonomy, integrations, data types, sites, user groups, and decisions.
+
+## Success thresholds
+Adoption, quality, workflow impact, risk/control, economics, operational readiness.
+
+## Stop thresholds
+Conditions that end the pilot or require immediate containment.
+
+## Governance
+Sponsor, process owner, product owner, technical lead, risk approver, decision cadence.
+```
+
+## Pilot phases
+
+| Phase | Objective | Questions answered |
+|---|---|---|
+| **0. Prepare** | Confirm scope, data, team, baseline, controls, and users. | Are we solving the right problem safely? |
+| **1. Prototype** | Validate user workflow and technical assumptions with limited data/users. | Is the interaction useful and technically viable? |
+| **2. Controlled pilot** | Test in a real, bounded workflow. | Do users adopt it and does it improve the KPI? |
+| **3. Readiness review** | Confirm scale requirements. | Can it be monitored, supported, governed, and adopted broadly? |
+| **4. Scale wave** | Expand deliberately by site/product/workflow. | Does value transfer across contexts? |
+
+## The “scale” test
+
+A use case is ready to scale only if all six are true:
+
+1. **Value** — measured benefit meets threshold.
+2. **Adoption** — target users repeatedly choose or are able to use it in the workflow.
+3. **Quality** — evaluation results meet defined performance levels.
+4. **Controls** — security, safety, access, logging, monitoring, and incident handling are live.
+5. **Operations** — support model, owners, runbooks, data refresh, and performance monitoring are established.
+6. **Transferability** — site/product/process differences are understood; replication is a deliberate plan, not an assumption.
+
+## Pilot-to-scale handoff packet
+
+| Artifact | Why delivery/operations needs it |
+|---|---|
+| Opportunity canvas | Business context, users, value, risk boundaries. |
+| Process and user journey | Workflow integration and adoption design. |
+| Data/source inventory | Security, access, lineage, refresh, quality expectations. |
+| Evaluation plan/results | Confidence in quality, controls, and limitations. |
+| Architecture decision record | Chosen approach and rejected alternatives. |
+| Operating model | Ownership, support, incidents, change, monitoring. |
+| Value measurement plan | Baseline, target, benefit owner, realization method. |
+| Rollout strategy | Pilot scope, waves, localization needs, training/support. |
+
+---
+
+# 14. Data, digital thread, and platform-enablement strategy
+
+## Start from decisions, not from a generic data lake
+
+The innovation leader does not need to build every platform component. But they must make shared capability gaps visible and convert them into deliberate foundation investments.
+
+## The decision-to-data chain
+
+```text
+Business outcome
+  → User decision / action
+    → Required evidence
+      → Source systems and knowledge
+        → Data quality, access, semantics, lineage
+          → AI / analytics / workflow capability
+            → Measurement and monitoring
+```
+
+## Common manufacturing information domains
+
+| Domain | Typical systems/data | AI implication |
+|---|---|---|
+| **Product / design** | PLM, CAD, BOM, specifications, requirements, test records | Traceability, IP controls, configuration/version awareness. |
+| **Process / production** | MES, SCADA, historian, routing, batch records, shift logs | Time alignment, context, OT access, site variation. |
+| **Quality / lab** | QMS, LIMS, inspection images, SPC, CAPA, certificates | Controlled records, defect taxonomy, quality governance. |
+| **Maintenance / assets** | EAM/CMMS, condition monitoring, work orders, spare parts | Failure-mode taxonomy, asset hierarchy, event history. |
+| **Supply / commercial** | ERP, MRP, WMS, CRM, supplier data, forecasts, contracts | Master-data consistency, scenario traceability, customer/supplier confidentiality. |
+| **Knowledge / content** | SOPs, manuals, policies, engineering documents, training, records | Curation, access control, freshness, citations, content ownership. |
+
+## The manufacturing knowledge-assistant pattern
+
+A trustworthy technical/operations assistant normally needs:
+
+1. **Controlled authoritative sources** — versioned procedures, approved manuals, specifications, or records.
+2. **Content ownership** — someone accountable for currency and retirement.
+3. **Metadata and permissions** — product/site/role/classification, effective dates, access control.
+4. **Retrieval and response controls** — source citation, relevance checks, confidence/uncertainty cues, safe refusal when evidence is missing.
+5. **Evaluation set** — real user questions, policy edge cases, controlled “known answer” tests, adversarial questions.
+6. **Operational telemetry** — unanswered questions, bad answers, user feedback, source gaps, latency/errors.
+
+## Foundation capability backlog
+
+Instead of calling all platform work “AI platform,” classify it clearly:
+
+| Foundation | Enables | Typical evidence of need |
+|---|---|---|
+| Identity and role-aware access | Assistants, copilots, cross-system workflows | Sensitive data/product knowledge cannot be safely shared. |
+| Curated knowledge/content governance | RAG, technical support, SOP assistance | Users cannot trust document currency or source-of-truth. |
+| Data quality / semantic layer | Analytics, ML, optimization | Teams disagree about definitions or cannot reconcile measures. |
+| Feature / time-series engineering | Predictive maintenance, anomaly detection | Historian/asset/event data lacks consistent context. |
+| Integration / tool gateway | Workflow automation, agents | AI can recommend but cannot participate safely in work. |
+| Evaluation and observability | GenAI, agents, ML | Output quality or safety cannot be proven/monitored. |
+| MLOps / LLMOps | Production AI systems | Models/prompts/data change without controlled deployment. |
+| Digital twin / simulation capability | Process optimization, design/operations scenarios | Physical-system behavior needs safe what-if testing. |
+
+## Digital thread lens
+
+A digital thread connects lifecycle information so decisions can use traceable context across design, process, quality, supply, and field feedback. The innovation leader should ask:
+
+- Can a product requirement be linked to design specifications, BOM, process parameters, test evidence, quality records, and field feedback?
+- Is the relevant “as-designed,” “as-planned,” “as-built,” and “as-serviced” context available for the decision?
+- Are product versions and effective dates explicit?
+- What data or semantic gaps prevent a cross-functional AI use case from being reliable?
+
+---
+
+# 15. Stakeholder influence and executive communication
+
+## Stakeholder map
+
+| Stakeholder | What they care about | How to earn trust |
+|---|---|---|
+| **Business executive sponsor** | Strategic impact, accountability, speed, investment clarity. | Lead with outcome, choices, value range, risks, and decision needed. |
+| **Plant / operations leader** | Safety, throughput, quality, schedule disruption, frontline practicality. | Spend time at the point of work; respect constraints; prove value with real operational metrics. |
+| **Engineering / R&D leader** | Technical integrity, IP, traceability, speed, expert credibility. | Preserve evidence, source/version context, and human technical authority. |
+| **Quality leader** | Compliance, repeatability, auditability, product/customer risk. | Include controls and quality acceptance in the first concept, not at the end. |
+| **Supply-chain leader** | Service, resilience, inventory, exception workload. | Show constraints and trade-offs; do not deliver a black-box recommendation. |
+| **CIO / CTO / architecture** | Scalability, integration, security, technical debt, platform reuse. | Bring clear problem framing, reusable patterns, and explicit requirements. |
+| **OT security / cyber** | Availability, segmentation, access, recovery, cyber risk. | Engage before solution design is fixed; show least privilege and safe fallback. |
+| **Finance / value partner** | Credible benefits, cost, ownership, financial realization. | Validate baselines and mechanisms early; distinguish forecast from realized value. |
+| **Frontline user / SME** | Practicality, time, safety, respect for expertise. | Co-design; ensure outputs are explainable and work at the point of need. |
+
+## Executive one-page narrative
+
+Use this order:
+
+```text
+1. Business outcome at stake
+2. Current process problem and baseline
+3. Why it matters now
+4. Options considered, including non-AI option
+5. Recommended path and why
+6. Value range, assumptions, and risks
+7. Pilot scope, success/stop thresholds
+8. Decision or support required
+```
+
+## Three executive communication rules
+
+1. **Do not hide uncertainty.** Present the hypothesis, evidence gap, decision, and risk plan.
+2. **Never say “AI will save X” without a mechanism.** Explain how the operating change produces value.
+3. **Ask for a decision, not vague support.** Examples: approve a four-week discovery, nominate a process owner, authorize approved data access, fund a pilot, or stop the initiative.
+
+## The “red/yellow/green” escalation style
+
+| Status | Meaning | Required communication |
+|---|---|---|
+| **Green** | Hypotheses, adoption, controls, and value are on track. | Continue; share learning. |
+| **Yellow** | A material assumption is uncertain or a dependency could delay value. | State assumption, owner, date, mitigation, and decision needed. |
+| **Red** | Safety/control issue, invalid value case, lack of sponsor ownership, or technical blocker makes continuation unjustified. | Stop/contain/escalate with a clear recommendation. |
+
+---
+
+# 16. Operating cadence, metrics, and dashboards
+
+## Weekly time allocation for the innovation leader
+
+| Allocation | Focus | Why it matters |
+|---:|---|---|
+| 30% | Sponsor, leader, frontline, and SME conversations | Creates trusted demand and real problem understanding. |
+| 25% | Discovery workshops and opportunity shaping | Turns ideas into delivery-ready hypotheses. |
+| 20% | Scoring, business cases, architecture/risk alignment | Protects portfolio quality. |
+| 15% | Pilot reviews and blocker removal | Prevents pilot purgatory. |
+| 10% | Market scanning, capability development, reusable assets | Keeps the practice current without chasing trends. |
+
+## Weekly rhythm
+
+| Day / window | Focus |
+|---|---|
+| **Monday** | Portfolio clarity: status, gates, blocked decisions, upcoming sponsor touchpoints. |
+| **Tuesday–Wednesday** | Discovery, frontline observation, workshops, opportunity shaping. |
+| **Thursday** | Solution/risk/data working sessions and pilot reviews. |
+| **Friday** | Executive communications, value evidence, lessons, next-week decisions. |
+
+## Core dashboard: four views
+
+### 1. Demand and portfolio health
+
+| KPI | Interpretation |
+|---|---|
+| Qualified opportunities by value theme/domain | Is demand connected to strategy or just unevenly distributed? |
+| Conversion from signal → shaped → funded | Is intake quality improving? |
+| Time in each stage | Where does the process stall? |
+| Stop/park rate | Is the organization willing to stop weak ideas early? |
+| Portfolio mix by lane | Are quick wins, strategic bets, foundations, and exploration balanced? |
+
+### 2. Delivery and readiness
+
+| KPI | Interpretation |
+|---|---|
+| Pilot cycle time | Is proof being generated quickly enough? |
+| Dependencies / blockers aging | Are cross-functional issues being removed? |
+| Data/access readiness | Which shared gaps are recurring? |
+| Risk review completion | Is governance being engaged early enough? |
+| Production readiness score | Can successful pilots actually scale? |
+
+### 3. Adoption and quality
+
+| KPI | Interpretation |
+|---|---|
+| Eligible-user adoption / repeat use | Is the solution becoming part of the work? |
+| User acceptance / task-quality score | Is it reliable enough to trust? |
+| Override / abandonment rate | Is there a workflow or quality problem? |
+| Safety/control incidents | Are action boundaries or evaluation inadequate? |
+| Feedback themes | What must improve next? |
+
+### 4. Value realization
+
+| KPI | Interpretation |
+|---|---|
+| Forecast value vs. realized value | Are cases realistic and benefits converted? |
+| Value by category | Cost, capacity, quality, cash, revenue, risk. |
+| Benefit-owner signoff | Does the business accept the result? |
+| Cost to deliver / run | Is the solution economic over time? |
+| Reuse leverage | Are shared patterns reducing incremental delivery effort? |
+
+---
+
+# 17. 30/60/90-day and first-year success plan
+
+## Days 1–30: build context, trust, and a visible system
+
+**Objectives**
+- Understand enterprise strategy, operating model, and innovation mandate.
+- Map stakeholders across business, plants, engineering, data/AI, IT, OT, quality, finance, security, and change.
+- Learn current AI/digital initiatives, platforms, governance, and pain points.
+- Establish an initial intake, canvas, scorecard, and portfolio view.
+
+**Actions**
+- Conduct 20–30 structured listening sessions.
+- Visit at least one site or observe frontline work where appropriate.
+- Inventory active pilots and classify them by stage, sponsor, value, risk, and readiness.
+- Identify duplicated efforts and “pilot purgatory” cases.
+- Build a first opportunity map organized by enterprise value themes.
+
+**Deliverables**
+- Stakeholder / sponsor map.
+- Current-state initiative inventory.
+- Draft AI Innovation Operating System and governance proposal.
+- Initial opportunity funnel with 10–20 qualified signals.
+- A short “what I heard / what we should do next” executive readout.
+
+## Days 31–60: create credible opportunities and operating rhythm
+
+**Objectives**
+- Turn top signals into decision-quality opportunities.
+- Establish discovery workshop cadence.
+- Validate scorecard and risk-tier approach with key partners.
+- Generate early momentum without promising the world.
+
+**Actions**
+- Run 3–5 discovery workshops across distinct value-chain domains.
+- Shape 6–10 opportunity canvases.
+- Identify 2–3 quick-win candidates, 2–3 strategic bets, and shared foundation gaps.
+- Align finance on value methodology and technology/risk partners on early review checkpoints.
+- Launch a monthly portfolio council and biweekly shaping review.
+
+**Deliverables**
+- Approved opportunity canvas template and scorecard.
+- First portfolio heatmap.
+- Two pilot charters ready for decision.
+- Foundation capability backlog.
+- Executive dashboard prototype.
+
+## Days 61–90: prove operating discipline and secure commitments
+
+**Objectives**
+- Start only the pilots that have clear value, ownership, and controls.
+- Produce visible portfolio decisions, including stopping or parking weak ideas.
+- Create a 12-month roadmap with investment choices.
+
+**Actions**
+- Launch 1–3 tightly scoped pilots.
+- Hold first portfolio council; obtain fund/sequence/stop decisions.
+- Establish a value-realization review with finance and sponsors.
+- Publish reusable playbooks: workshop, canvas, risk tier, pilot charter, scale checklist.
+- Communicate lessons and early results without overstating impact.
+
+**Deliverables**
+- 12-month AI opportunity roadmap.
+- Active pilot dashboard with success/stop thresholds.
+- Portfolio decision log.
+- Initial operating model and RACI.
+- Executive narrative: “from experimentation to measurable AI value.”
+
+## First-year maturity targets
+
+| Quarter | Maturity focus | Outcome |
+|---|---|---|
+| **Q1** | Establish credibility and an opportunity system. | Qualified pipeline, governance cadence, templates, first pilots. |
+| **Q2** | Prove value and adoption. | Measured evidence, scale/stop decisions, improved intake quality. |
+| **Q3** | Industrialize reusable patterns. | Shared knowledge, evaluation, data, integration, and governance foundations. |
+| **Q4** | Scale value and institutionalize learning. | Repeatable portfolio management, scaled products, finance-confirmed benefits, next-year plan. |
+
+---
+
+# 18. Reusable templates and checklists
+
+## A. Five-minute signal card
+
+```text
+Signal / pain point:
+Business area:
+Who raised it:
+Why it matters now:
+Current workflow / decision:
+Observed friction:
+Possible outcome metric:
+Potential sponsor:
+Suggested next step:
+```
+
+## B. Discovery readiness checklist
+
+- [ ] A sponsor or credible business source exists.
+- [ ] The relevant process and user are identifiable.
+- [ ] The strategic outcome is known.
+- [ ] A baseline metric exists or can be captured quickly.
+- [ ] Frontline/user input is available.
+- [ ] Data/document sources can be named.
+- [ ] Risk/control partners are identified where needed.
+- [ ] At least one non-AI alternative will be considered.
+
+## C. Pilot entry checklist
+
+- [ ] Executive sponsor and process owner named.
+- [ ] Baseline, target, and benefit mechanism agreed.
+- [ ] Scope and out-of-scope boundaries explicit.
+- [ ] Data access and source ownership confirmed.
+- [ ] Risk tier and human accountability defined.
+- [ ] Evaluation plan and success/stop thresholds defined.
+- [ ] User cohort, training, feedback, and support approach defined.
+- [ ] Pilot-end decision maker and date defined.
+
+## D. Scale readiness checklist
+
+- [ ] Value has been measured against baseline.
+- [ ] Adoption is sustained for target users.
+- [ ] Quality/safety/security thresholds are met.
+- [ ] Monitoring, logs, incident process, and rollback are live.
+- [ ] Support and product ownership are funded.
+- [ ] Data/content refresh and change management are defined.
+- [ ] Site/product variation and rollout waves are planned.
+- [ ] Finance/value owner validates realization plan.
+
+## E. Value realization report template
+
+```markdown
+# Value Realization Report
+
+## Initiative and owner
+
+## Original hypothesis
+Baseline, target, formula, assumptions.
+
+## What was delivered
+Scope, users, workflow, controls, deployment date.
+
+## Evidence
+Adoption, quality, workflow impact, risk/control outcomes, economic measures.
+
+## Realized value
+Validated amount/range, category, financial owner, realization mechanism.
+
+## Gaps and lessons
+What did not work, why, and what should change next time?
+
+## Recommendation
+Scale, optimize, contain, retire, or replicate.
+```
+
+---
+
+# 19. Common failure modes and recovery actions
+
+| Failure mode | Warning sign | Recovery action |
+|---|---|---|
+| **Innovation theater** | Success is counted as demos, hackathons, or number of ideas. | Shift metrics to qualified opportunities, pilots, adoption, and realized value. |
+| **Technology-first ideation** | “Where can we use agents?” is the opening question. | Start with outcome, workflow, decision, baseline, and non-AI options. |
+| **Pilot purgatory** | A proof of concept “went well” but has no scale decision. | Define scale/stop gates, owner, funding path, and production requirements before pilot start. |
+| **No business owner** | Many people are interested, but nobody owns the KPI. | Do not fund until sponsor/process owner accountability is explicit. |
+| **Vague ROI** | “It will save a lot of time.” | Demand a baseline, volume, adoption estimate, conversion mechanism, and finance partner. |
+| **Late governance** | Security, quality, OT, or legal appear at the end. | Risk-tier in discovery and involve the right partners before solution selection. |
+| **Overbuilding the platform** | A giant AI platform is proposed before a validated demand pattern exists. | Build modular foundations only where repeated use-case evidence justifies them. |
+| **Underbuilding controls** | A prototype is pushed into operational use with no monitoring/evaluation/rollback. | Use explicit autonomy levels, evaluation gates, logging, support, and safe fallback. |
+| **Ignoring frontline workflow** | Users say the solution is useful but do not use it. | Observe work, co-design, change SOPs/training, and measure adoption. |
+| **Assuming one-site success scales** | A solution breaks at another plant/product line. | Treat transferability as a hypothesis; plan replication waves and local variation. |
+| **Treating data readiness as a binary** | “We have data” but no context, quality, ownership, or access. | Map source, semantics, time alignment, quality, ownership, and permissions. |
+| **Executive overpromising** | Large value claims precede evidence. | Communicate hypotheses and ranges; maintain a decision log and measured outcomes. |
+
+---
+
+# 20. Research AI prompts
+
+## Master prompt: build a manufacturing AI opportunity portfolio
+
+```text
+You are an enterprise AI strategy, manufacturing operations, product lifecycle, and responsible-AI research analyst.
+
+Create a decision-ready AI opportunity portfolio for a high-tech manufacturer with R&D, PLM, factories, OT, quality, supply chain, commercial engineering, field service, finance, and IT.
+
+Do not begin with technology. Begin with strategic outcomes, operating constraints, and business workflows.
+
+For each opportunity:
+1. State the business problem and relevant value-chain domain.
+2. Identify the user, workflow, decision, and action affected.
+3. Propose at least two solution options, including a non-AI option.
+4. Recommend the least-complex viable pattern: process redesign, rules, analytics, ML, optimization, computer vision, digital twin, RAG, copilot, agent, or bounded automation.
+5. Define data, knowledge, integration, and access requirements.
+6. Define measurable value hypotheses, baseline data, benefit owner, and realization mechanism.
+7. Assign a risk tier and human-accountability model.
+8. List evaluation criteria, monitoring needs, and stop conditions.
+9. Score value, readiness, risk manageability, adoption fit, strategic alignment, and time to evidence.
+10. Recommend: quick win, strategic bet, foundation, explore, park, or stop.
+
+Organize results by R&D, PLM, supply chain, manufacturing, quality, commercial/service, finance, and IT/cyber.
+Use concise executive language and flag assumptions explicitly.
+```
+
+## Prompt: conduct a discovery-interview synthesis
+
+```text
+You are analyzing interview notes from manufacturing leaders, plant operators, engineers, planners, quality professionals, and commercial teams.
+
+Synthesize the notes into an AI Opportunity Canvas.
+
+Do not assume AI is required. Identify root causes such as process design, missing standard work, poor data quality, fragmented knowledge, manual reconciliation, weak system integration, or true prediction/optimization needs.
+
+Output:
+- strategic outcome;
+- current workflow and friction map;
+- user/persona and decision;
+- root-cause hypotheses;
+- candidate solution options;
+- data/knowledge needs;
+- risk and human accountability;
+- measurable value hypothesis;
+- top questions to validate;
+- recommended next decision.
+
+Separate facts from assumptions. Do not invent systems, metrics, or regulations not in the notes.
+```
+
+## Prompt: select the right solution pattern
+
+```text
+You are an enterprise solution architect for high-tech manufacturing.
+
+Given a business problem, decide whether the right intervention is process redesign, rules/workflow automation, BI/analytics, predictive ML, optimization, computer vision, digital twin, RAG, copilot, agent with approval, or no AI.
+
+For each option:
+- explain fit and misfit;
+- list prerequisites;
+- describe the likely risk tier;
+- state what must remain human-owned;
+- define a minimal pilot;
+- state the evaluation metrics;
+- recommend the least-complex path.
+
+Be skeptical of agentic solutions. Recommend agents only when there is a multi-step workflow, explicit tools/permissions, observable actions, safe approval boundaries, and a credible evaluation/rollback design.
+```
+
+## Prompt: prepare a pilot charter
+
+```text
+Create a time-boxed pilot charter for this high-tech manufacturing AI opportunity.
+
+Include business outcome, sponsor, process owner, user group, scope/out-of-scope, baseline, target, technical hypothesis, adoption hypothesis, safety/risk tier, data sources, integration restrictions, human approvals, evaluation suite, success thresholds, stop conditions, governance cadence, and pilot-end scale/stop decision.
+
+Do not use generic success statements. Every threshold must be measurable or explicitly flagged as needing confirmation.
+```
+
+## Prompt: generate an executive decision memo
+
+```text
+Write a one-page executive AI opportunity decision memo for a high-tech manufacturing leadership team.
+
+Structure:
+1. Business outcome at stake.
+2. Current process and baseline.
+3. Proposed opportunity and options considered.
+4. Recommended approach and why it is the least-complex viable path.
+5. Value range, key assumptions, costs, and realization mechanism.
+6. Safety, data, security, quality, and adoption controls.
+7. Pilot scope, evidence thresholds, and stop conditions.
+8. Decision requested from leadership.
+
+Use direct, non-hyped language. Distinguish facts, assumptions, and decisions.
+```
+
+---
+
+# 21. Source framework
+
+This playbook is an original practical synthesis. The following authoritative sources informed its governance, manufacturing, digital-twin, and OT-security posture:
+
+1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — risk-management foundation for organizations designing, developing, deploying, or using AI.
+2. [NIST AI RMF Core and Playbook](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/) — practical framing around Govern, Map, Measure, and Manage.
+3. [NIST Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) — GenAI-specific risk considerations.
+4. [ISO/IEC 42001:2023](https://www.iso.org/standard/42001) — AI management-system standard.
+5. [NIST Smart Manufacturing](https://www.nist.gov/smart-manufacturing) — standards, measurement, and trust considerations for smart manufacturing.
+6. [NIST Digital Twins for Advanced Manufacturing](https://www.nist.gov/programs-projects/digital-twins-advanced-manufacturing) — manufacturing digital-twin context and standards direction.
+7. [NIST Guide to Operational Technology Security, SP 800-82r3](https://csrc.nist.gov/pubs/sp/800/82/r3/final) — OT security considerations addressing reliability, availability, and safety needs.
+8. [ISA/IEC 62443 Series of Standards](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) — industrial automation and control systems cybersecurity practices.
+9. [World Economic Forum Global Lighthouse Network](https://initiatives.weforum.org/global-lighthouse-network/home) — examples of manufacturers applying advanced technologies at scale for financial, operational, and sustainability outcomes.
+10. [Manufacturing USA: Fundamentals of Smart Manufacturing](https://www.manufacturingusa.com/ewd/fundamentals-smart-manufacturing) — a useful overview of smart manufacturing, IT/OT convergence, digital thread/twin, analytics, AI, and workforce augmentation.
+
+> **Use note:** This playbook does not replace engineering validation, process safety management, quality-system requirements, cybersecurity standards, legal review, export-control assessment, privacy review, or regulatory advice. Apply the organization’s own policies and applicable laws/standards to each use case.
