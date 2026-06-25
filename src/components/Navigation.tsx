@@ -14,6 +14,7 @@ export default function Navigation() {
     { label: "Portfolio & Value", href: "/portfolio" },
     { label: "Governance", href: "/governance" },
     { label: "Toolkit", href: "/toolkit" },
+    { label: "About", href: "/about" },
   ];
 
   return (
@@ -51,6 +52,16 @@ export default function Navigation() {
 
             <Link href="/toolkit/discovery-workshop" className="hidden sm:inline-block btn-primary text-sm">
               Discovery Workshop
+            </Link>
+
+            {/* About / Author Avatar */}
+            <Link
+              href="/about"
+              className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full border-2 border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50 transition-all text-sm font-semibold text-indigo-700"
+              title="About Saroj Lamichhane"
+            >
+              <span className="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-black flex items-center justify-center flex-shrink-0">SL</span>
+              <span className="hidden md:inline">About</span>
             </Link>
 
             {/* Mobile Menu Button */}

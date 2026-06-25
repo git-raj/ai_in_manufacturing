@@ -33,6 +33,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Meet the Author — prominent author spotlight */}
+      <section className="py-10 bg-gradient-to-r from-slate-900 to-indigo-950 text-white">
+        <div className="container-wide">
+          <div className="flex flex-col sm:flex-row items-center gap-6">
+            {/* Avatar */}
+            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center text-2xl font-black text-white shadow-lg">
+              SL
+            </div>
+            {/* Text */}
+            <div className="flex-1 text-center sm:text-left">
+              <p className="text-xs text-indigo-300 font-semibold uppercase tracking-widest mb-1">Built by a practitioner</p>
+              <p className="text-white font-bold text-lg leading-snug">
+                Saroj Lamichhane — Senior Manager, Data & AI at Accenture
+              </p>
+              <p className="text-slate-300 text-sm mt-1">
+                12+ years · $42M+ AI portfolio · Fortune 100 clients · 5,000+ platform users
+              </p>
+            </div>
+            {/* CTA */}
+            <Link
+              href="/about"
+              className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-bold rounded-lg transition-colors text-sm whitespace-nowrap"
+            >
+              View Full Profile
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Value Propositions */}
       <section className="py-16 sm:py-24 bg-white">
         <div className="container-wide">
