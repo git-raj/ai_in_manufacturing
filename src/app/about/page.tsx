@@ -45,7 +45,7 @@ const experience = [
       "Present architecture strategy and innovation recommendations to executive leadership",
     ],
     innovations: [
-      { name: "Enterprise AI Engineering Accelerator", desc: "Designed AI-assisted, metadata-driven engineering capabilities to improve delivery speed and consistency across data-ingestion, transformation, and quality assets" },
+      { name: "Enterprise Data Engineering AI Accelerator", desc: "Designed AI-assisted, metadata-driven engineering capabilities to improve delivery speed and consistency across data-ingestion, transformation, and quality assets" },
       { name: "Enterprise Data Controls Intelligence", desc: "Architected AI-enabled data quality, reconciliation, observability, and remediation frameworks for large enterprise data ecosystems and regulated environments" },
     ],
     color: "indigo",
@@ -64,6 +64,15 @@ const experience = [
     ],
     innovations: [],
     color: "blue",
+  },
+  {
+    company: "ARGHA Inc.",
+    location: "Atlanta, GA",
+    roles: [{ title: "Consultant – Enterprise Data Solutions", period: "2013" }],
+    promotion: "",
+    highlights: ["Delivered enterprise data integration and analytics solutions for client organizations."],
+    innovations: [],
+    color: "slate",
   },
 ];
 

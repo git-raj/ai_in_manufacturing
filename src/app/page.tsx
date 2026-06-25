@@ -101,7 +101,7 @@ export default function Home() {
                 <div className="flex-1">
                   <h3 className="font-bold text-lg mb-2">Have a business problem?</h3>
                   <p className="text-slate-600 mb-4">
-                    Run structured discovery. Use our SPARK method to frame opportunities and create a decision-ready brief.
+                    Run structured discovery. Our SPARK method — <span className="font-medium">Strategic outcome → Process & persona → Analyze friction → Reframe solutions → Keep value accountable</span> — turns vague pain into a decision-ready brief.
                   </p>
                   <Link href="/toolkit/discovery-workshop" className="text-indigo-600 font-semibold hover:text-indigo-700">
                     Run Discovery →

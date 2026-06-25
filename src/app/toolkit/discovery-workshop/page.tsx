@@ -12,7 +12,7 @@ export default function DiscoveryWorkshop() {
       time: "10 min",
       activities: [
         "Explain: 'We are selecting problems worth solving, not choosing technology.'",
-        "Share the SPARK method",
+        "Share the SPARK method: Strategic outcome → Process & persona → Analyze friction → Reframe solutions → Keep value accountable",
         "Establish: success = ranked opportunities with named owners",
       ],
     },
