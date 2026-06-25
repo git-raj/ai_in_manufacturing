@@ -32,7 +32,7 @@ export default function Frameworks() {
                 title: "Manufacturing Value Chain",
                 description:
                   "Understand your operating model: R&D, PLM, supply chain, operations, quality, commercial, and services. See where AI adds value without creating downstream risk.",
-                href: "/frameworks",
+                href: "/frameworks/value-chain",
                 tags: ["Architecture", "Context"],
               },
               {
@@ -48,7 +48,7 @@ export default function Frameworks() {
                 title: "Opportunity Architecture",
                 description:
                   "Four-layer hierarchy: enterprise theme → capability objective → opportunity family → specific use case. Structure your portfolio for coherent delivery.",
-                href: "/frameworks",
+                href: "/frameworks/opportunity-architecture",
                 tags: ["Portfolio", "Structure"],
               },
               {
